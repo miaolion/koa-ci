@@ -6,15 +6,18 @@ Koa-ci requires __node v7.6.0__ or higher for ES2015 and async function support.
 $ npm install koa-ci
 ```
 
-## Hello Koa-ci
+## Koa-ci
 
 ```js
 'use strict';
 
-const KoaCI = require('./system/');
+const KoaCI = require('koa-ci');
 const Server = new KoaCI.Server({
     // config
-    customMiddleware: {
+    'PORT': 6789,
+    'APPPATH': path.join(__dirname, './app/'),
+    'ROOTPATH': path.join(__dirname, './'),
+    'customMiddleware': {
         'PORT': 3000,
         'middlewares': ['test'],
         'test': {

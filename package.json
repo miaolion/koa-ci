@@ -1,6 +1,6 @@
 {
   "name": "koa-ci",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "a framework for koa with ci function",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,9 @@
     "url": "git+https://github.com/miaolion/koa-ci.git"
   },
   "keywords": [
-    "koa"
+    "koa",
+    "koa2",
+    "ci"
   ],
   "author": "cation",
   "license": "MIT",
